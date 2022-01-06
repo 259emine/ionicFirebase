@@ -1,0 +1,7 @@
+<ion-list>
+  <ion-item *ngFor="let user of users; i as index">
+    <ion-button color="primary"(click)="userDetail(user)">{{user.name + " " + user.surname}}</ion-button>
+  </ion-item>
+</ion-list>
+
+>

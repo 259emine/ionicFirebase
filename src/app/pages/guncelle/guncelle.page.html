@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Guncelle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="todo">
+    <ion-label position="fixed">Title</ion-label>
+    <ion-input placeholder="Todo Title" formControlName="title"></ion-input>
+
+    <ion-label position="fixed">Description</ion-label>
+    <ion-input placeholder="Todo Description" formControlName="description"></ion-input>
+
+    <ion-label>Status</ion-label>
+    <ion-select value="Evet" okText="Okay" cancelText="Dismiss" formControlName="done">
+      <ion-select-option value="Evet">Evet</ion-select-option>
+      <ion-select-option value="Hayır">Hayır</ion-select-option>
+    </ion-select>
+    <ion-button fill="outline" color="primary" expand="full" [disabled]="!todo.valid" (click)="guncelle(todo.value)">Add Todo</ion-button>
+  </form>
+</ion-content>

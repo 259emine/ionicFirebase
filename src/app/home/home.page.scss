@@ -1,0 +1,55 @@
+ion-content{
+  --ion-background-color: #966f90 !important;
+}
+
+ion-col{
+  color: #33102d;
+}
+
+ion-button {
+  color: #33102d;
+}
+
+
+.loginbtn{
+  --ion-color-primary:#520545;
+
+}
+
+.loginbtni{
+  --ion-color-primary:#2b0d26;
+}
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ion-title{
+  color: #490e44;
+}
+
+
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #5c1212;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}

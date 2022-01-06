@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="center">
+      ANASAYFA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-img src="assets/images/headersi.png"></ion-img>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col align-self-center>
+
+          <ion-button [routerLink]="['/registration']" size="small" fill="solid" shape="round"  class="loginbtn"  expand="block" color="primary">Kayıt Ol</ion-button>
+
+          <hr>
+
+          <span class="already">Zaten kullanıcı mısınız?</span>
+
+          <ion-button [routerLink]="['/login']" size="small" fill="solid" shape="round"  class="loginbtni" expand="block" color="primary">Oturum Aç</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>

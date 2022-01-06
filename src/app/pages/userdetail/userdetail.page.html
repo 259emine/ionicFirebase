@@ -1,0 +1,20 @@
+<ion-content>
+  <form [formGroup]="todoForm">
+    <ion-item lines="full">
+      <ion-label position="floating">Başlık</ion-label>
+      <ion-input formControlName="title" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Açıklama</ion-label>
+      <ion-input formControlName="description" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="addTodo()"  size="small" fill="solid" shape="round" class="loginbtnisi" color="primary" expand="block">Todod Ekle</ion-button>
+
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
